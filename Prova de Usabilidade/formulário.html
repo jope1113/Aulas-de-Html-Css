@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario-Prova.</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1>Bem vindo à página.</h1>
+    <p>Nessa disciplina, estudamos IHC, desenvolvimento de páginas web, desenvolvimento para mobile e jogos.</p>
+    <p>Agora estamos em web.</p>
+    <hr>
+
+    <form action="destino.html" method="post">
+        <center>
+        <fieldset>
+            <legend style="text-align:center">Cadastro</legend>
+            <label for="nome">Nome:</label>
+            <input type="text", name="nome", id="nome", onkeyup="recebernome()"><br><br>
+
+            <label for="senha">Senha:</label>
+            <input type="password", name="senha", id="senha", onkeyup="recebersenha()"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email", onkeyup="receberemail()"><br><br>
+
+            <label for="number">Idade:</label>
+            <input type="number", name="idade", id="idade", onkeyup="receberidade()">
+        </center>
+
+        <center>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+        </center>
+
+        </fieldset>
+    </form>
+    <footer class="rodapé">
+        Copyright by João Otávio 2022.
+    </footer>
+
+<script src="formulario.js"></script>
+
+</body>
+</html>
